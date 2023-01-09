@@ -1,3 +1,7 @@
+package com.pluralcamp.classes;
+
+//nombre cualificado de la clase Student:
+//com.pluralcamp.classes.Student
 
 public class Student {
 	
@@ -21,3 +25,4 @@ public class Student {
 	}
 	
 }
+

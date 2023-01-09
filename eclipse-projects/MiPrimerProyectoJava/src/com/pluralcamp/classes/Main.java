@@ -1,4 +1,4 @@
-
+package com.pluralcamp.classes;
 
 /*
  * Clase principal: 
@@ -68,7 +68,7 @@ public class Main {
 		profe1.especialidad = "Java Backend";
 		
 		profe1.imparteAsignatura();
-		profe1.preparaRecursos();
+		profe1.preparaRecursos();								
 		
 	}	
 	

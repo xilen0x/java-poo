@@ -1,3 +1,4 @@
+package com.pluralcamp.classes;
 
 public class Teacher {
 	
