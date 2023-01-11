@@ -5,6 +5,9 @@ public class Rectangle {
 	private double base;
 	private double height; // altura
 	
+	private Color backgroundColor; //color de fondo
+	private Color color; //color de las lineas o foreground color
+	
 	public Rectangle() {}
 	
 	public Rectangle(double base) {
@@ -46,12 +49,30 @@ public class Rectangle {
 		return this.height;
 	}
 
+	public Color getBackgroundColor() {
+		return backgroundColor;
+	}
+
+	public void setBackgroundColor(Color backgroundColor) {
+		this.backgroundColor = backgroundColor;
+	}
+
+	public Color getColor() {
+		return color;
+	}
+
+	public void setColor(Color color) {
+		this.color = color;
+	}
+
+	//Behavior
 	public double getArea() {
 		return base * height;
 	}
-
+	
+	public double getPerimeter() {
+		return (2 * this.base) + (2 * this.height);
+	}
+	
 }
 
-class Trapecio { // default
-
-}
