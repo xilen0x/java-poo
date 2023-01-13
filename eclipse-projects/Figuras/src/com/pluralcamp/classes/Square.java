@@ -17,6 +17,8 @@ public class Square extends Shape {
 		} else {
 			this.side = side;
 		}
+		this.setBackgroundColor(new Color(Color.BasicColor.WHITE));
+		this.setColor(new Color(Color.BasicColor.WHITE));		
 		System.out.printf("Cuadrado construido con lado igual a %f %n", this.getSide());
 	}
 
@@ -24,13 +26,15 @@ public class Square extends Shape {
 		this.side = 1.0;
 	}
 
-	public Square(double side, Color backgroungColor, Color color) {
+	public Square(double side, Color backgroundColor, Color color) {
 		if (side < 0) {
 			System.out.println("Valor inválido");
 			this.side = 1.0;
 		} else {
 			this.side = side;
 		}
+		this.setBackgroundColor(backgroundColor);
+		this.setColor(color);
 	}
 
 	// setters i getters

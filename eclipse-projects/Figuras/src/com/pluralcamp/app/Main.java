@@ -10,18 +10,31 @@ import com.pluralcamp.classes.Square;
 
 public class Main {
 	
-	public static void main(String[] args) {		
+	public static void main(String[] args) {				
 		
 		System.out.printf("%n---- Colores -----%n");
 		
-		//Colores
+		//Colores básicos
+		Color white = new Color(Color.BasicColor.WHITE);
+		System.out.println(Color.BasicColor.WHITE);
+		System.out.println(white);
+		Color black = new Color(Color.BasicColor.BLACK);
+		System.out.println(black);
+		Color red = new Color(Color.BasicColor.RED);
+		System.out.println(red);
+		Color green = new Color(Color.BasicColor.GREEN);
+		System.out.println(green);
+		Color blue = new Color(Color.BasicColor.BLUE);
+		System.out.println(blue);
+		
+		//Otros colores
 		Color color1 = new Color(250,160,160);
 		System.out.println(color1.toString());
-		Color blanco = new Color();
-		System.out.println(blanco.toString());		
+
 		Color color2 = new Color(12,14,230);
 		System.out.println(color2.toString());
 		
+				
 		
 		System.out.printf("%n---- Figuras -----%n");
 		
@@ -59,8 +72,8 @@ public class Main {
 		
 		//Rectangulo
 		Rectangle rectangle = new Rectangle(2.0, 3.0);//base vale 2.0
-		rectangle.setBackgroundColor(color2);
-		rectangle.setColor(blanco);
+		rectangle.setBackgroundColor(blue);
+		rectangle.setColor(white);
 		//rectangle.base = -2.0; //Valor INVALIDO
 //		rectangle.setBase(2.0);
 //		rectangle.setHeight(3.0);
@@ -73,8 +86,8 @@ public class Main {
 		
 		//Circulo
 		Circle circle = new Circle(5.5);//radio vale 5.0
-		circle.setBackgroundColor(color1);
-		circle.setColor(color2);
+		circle.setBackgroundColor(red);
+		circle.setColor(green);
 		//circle.radius = 5.5;
 		//circle.setRadius(5.5);
 		System.out.printf(
@@ -85,7 +98,7 @@ public class Main {
 		
 		//Esfera
 		Sphere esfera = new Sphere(7.8);
-		esfera.setColor(blanco);
+		esfera.setColor(black);
 		//esfera.radius = 7.8;
 		//esfera.setRadius(7.8);
 		System.out.printf(
