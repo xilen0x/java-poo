@@ -1,6 +1,6 @@
 package com.pluralcamp.classes;
 
-public class Shape {
+public abstract class Shape {
 	
 	private Color backgroundColor; // color de fondo
 	private Color color; // color de las lineas o foreground color
@@ -24,6 +24,10 @@ public class Shape {
 
 	//Behavior
 	public double getArea() {
+		System.out.println("Calculando area. Espere por favor...");
 		return 1.0;
 	}
+	
+//	public abstract double getArea();
+	
 }

@@ -26,9 +26,11 @@ public class Circle extends Shape {
 	}	
 
 	// Comportamiento
-//	public double getArea() {
-//		return Math.PI * this.radius * this.radius;
-//	}
+	@Override
+	public double getArea() {	
+//		super.getArea();
+		return Math.PI * this.radius * this.radius;
+	}
 	
 	public double getPerimeter() {
 		return 2 * Math.PI * this.radius;

@@ -1,27 +1,23 @@
 package com.pluralcamp.labs.animals;
 
-public class Cow {
+public class Cow extends Animal implements Speakable {
 	
 	//ESTADO
-	double weight; //peso en Kg
-	String color; //Color blanco, marron
 	boolean lactant; //si da leche o no
 	
-	//COMPORTAMIENTO
-	void come() {
-		System.out.println("La vaca come");
-	}
-	
-	void duerme() {
-		System.out.println("La vaca duerme");
-	}
-	
+	//COMPORTAMIENTO	
 	void daLeche() {
 		System.out.println("La vaca da leche");
 	}
 	
-	void muuu() {
+	@Override
+	public void makeSound() {
 		System.out.println("La vaca hace muuuu");
+	}
+	
+	public void come() {
+		System.out.print("Soy una vaca: ");
+		super.come();
 	}
 	
 }

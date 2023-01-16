@@ -32,9 +32,7 @@ public class Main {
 		System.out.println(color1.toString());
 
 		Color color2 = new Color(12,14,230);
-		System.out.println(color2.toString());
-		
-				
+		System.out.println(color2.toString());			
 		
 		System.out.printf("%n---- Figuras -----%n");
 		

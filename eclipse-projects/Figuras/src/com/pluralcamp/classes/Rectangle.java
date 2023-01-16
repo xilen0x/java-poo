@@ -47,9 +47,11 @@ public class Rectangle  extends Shape {
 	}
 
 	//Behavior
-//	public double getArea() {
-//		return base * height;
-//	}
+	@Override
+	public double getArea() {
+//		super.getArea();
+		return base * height;
+	}
 	
 	public double getPerimeter() {
 		return (2 * this.base) + (2 * this.height);

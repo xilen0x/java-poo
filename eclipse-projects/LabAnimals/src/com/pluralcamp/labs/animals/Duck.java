@@ -1,18 +1,12 @@
 package com.pluralcamp.labs.animals;
 
-public class Duck {
+public class Duck extends Animal implements Speakable {
 	
 	//ESTADO
-	double weight; //peso en Kg
-	String color; //Color del pato
 	boolean isUgly; //El patito es feo o no
 	
 	
-	//COMPORTAMIENTO
-	void come() {
-		System.out.println("El pato come");
-	}
-	
+	//COMPORTAMIENTO	
 	void nada() {
 		System.out.println("El pato nada");
 	}
@@ -21,8 +15,14 @@ public class Duck {
 		System.out.println("El pato vuela");
 	}
 	
-	void quack() {
+	@Override
+	public void makeSound() {
 		System.out.println("El pato hace quack quack");
+	}
+	
+	public void come() {
+		System.out.print("Soy un patito: ");
+		super.come();
 	}
 	
 }
