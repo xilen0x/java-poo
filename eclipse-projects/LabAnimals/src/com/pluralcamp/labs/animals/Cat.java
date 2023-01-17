@@ -1,27 +1,27 @@
 package com.pluralcamp.labs.animals;
 
-public class Cat {
+public class Cat extends Animal implements Speakable {
 	
 	//ESTADO
-	double weight; //en kg
-	String color; //brown, white ...
 	String size; //big, medium, small
 	
 	//COMPORTAMIENTO (BEHAVIOR)
 	void salta() {
-		System.out.println("El gato salta");
+		System.out.println("El gato de color salta");
 	}
 	
 	void lick() {
 		System.out.println("El gato se lame");		
-	}
+	}	
 	
-	void duerme() {
-		System.out.println("El gato duerme...");
-	}
-	
-	void mew() {
+	@Override
+	public void makeSound() {
 		System.out.println("El gato hace miauuu");
+	}
+	
+	public void come() {
+		System.out.print("Soy un gato: ");
+		super.come();
 	}
 	
 }

@@ -44,9 +44,11 @@ public class Square extends Shape {
 	}
 
 	// Behavior
-//	public double getArea() {
-//		return side * side;
-//	}
+	@Override
+	public double getArea() {	
+		//super.getArea();
+		return side * side;
+	}
 
 	public double getPerimeter() {
 		return this.side * 4;

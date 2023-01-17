@@ -28,7 +28,9 @@ public class Sphere extends Shape {
 		return (4.0/3.0) * Math.PI * radius * radius * radius;
 	}
 	
-//	public double getArea() {
-//		return 4 * Math.PI * Math.pow(this.radius,2);
-//	}
+	@Override
+	public double getArea() {
+//		super.getArea();
+		return 4 * Math.PI * Math.pow(this.radius,2);
+	}
 }
