@@ -32,6 +32,7 @@ public class Pair<K,V> { //wrapper (emboltorio)
 
 	@Override
 	public String toString() {
-		return "Key = " + this.key + ", value = " + this.value; 
+		//return "Key = " + this.key + ", value = " + this.value; 
+		return this.value.toString() + " tiene DNI " + this.key.toString();
 	}
 }
